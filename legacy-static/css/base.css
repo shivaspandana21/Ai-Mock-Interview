@@ -1,0 +1,103 @@
+/* ================================================
+   css/base.css — Reset, Typography, Scrollbar
+   ================================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--bg2); }
+::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #7b74ff; }
+
+/* Main App Layout */
+#app {
+  display: none;
+  min-height: 100vh;
+}
+
+/* Main Content Area */
+.main-content {
+  margin-left: var(--sidebar-w);
+  min-height: 100vh;
+  padding: 32px;
+}
+
+/* Pages */
+.page { display: none; }
+.page.active { display: block; animation: fadeIn 0.3s ease both; }
+
+/* Page Header */
+.page-header { margin-bottom: 28px; }
+.page-header h2 {
+  font-family: 'Syne', sans-serif;
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--text);
+}
+.page-header p { color: var(--text2); font-size: 14px; margin-top: 4px; }
+
+/* Grid Layouts */
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; }
+.grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  padding: 32px;
+  color: var(--text3);
+  font-size: 14px;
+}
+.empty-state-card {
+  text-align: center;
+  padding: 48px;
+  color: var(--text3);
+}
+
+/* Section Title */
+.section-title {
+  font-family: 'Syne', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Question list scroll container */
+.qn-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .grid-4 { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 900px) {
+  .grid-3 { grid-template-columns: 1fr 1fr; }
+  .grid-2 { grid-template-columns: 1fr; }
+  .main-content { margin-left: 0; padding: 16px; }
+}
+@media (max-width: 600px) {
+  .grid-4 { grid-template-columns: 1fr; }
+  .grid-3 { grid-template-columns: 1fr; }
+}

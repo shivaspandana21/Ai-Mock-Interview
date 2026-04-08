@@ -1,0 +1,45 @@
+/* ================================================
+   css/variables.css — Design Tokens
+   ================================================ */
+:root {
+  /* Background Layers */
+  --bg:    #07080f;
+  --bg2:   #0d0f1e;
+  --bg3:   #12152a;
+
+  /* Card Layers */
+  --card:  #161929;
+  --card2: #1c2035;
+
+  /* Borders */
+  --border:  #252840;
+  --border2: #2f3455;
+
+  /* Accent Colors */
+  --accent:  #6c63ff;
+  --accent2: #4fd1c5;
+  --accent3: #f6ad55;
+  --accent4: #fc8181;
+  --accent5: #68d391;
+
+  /* Text Levels */
+  --text:  #e8eaf6;
+  --text2: #9da3c8;
+  --text3: #5c6380;
+
+  /* Gradients */
+  --grad1: linear-gradient(135deg, #6c63ff, #4fd1c5);
+  --grad2: linear-gradient(135deg, #f6ad55, #fc8181);
+  --grad3: linear-gradient(135deg, #68d391, #4fd1c5);
+
+  /* Shadows */
+  --shadow: 0 8px 32px rgba(108, 99, 255, 0.15);
+
+  /* Radii */
+  --r:  16px;
+  --r2: 12px;
+  --r3: 8px;
+
+  /* Sidebar width */
+  --sidebar-w: 260px;
+}

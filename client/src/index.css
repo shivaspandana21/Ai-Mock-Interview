@@ -1,0 +1,42 @@
+:root {
+  /* Background Layers */
+  --bg:    #fdfbf7;
+  --bg2:   #f5f0e6;
+  --bg3:   #ebe4d8;
+
+  /* Card Layers */
+  --card:  #ffffff;
+  --card2: #faf7f2;
+
+  /* Borders */
+  --border:  #e0d8cc;
+  --border2: #d1c6b6;
+
+  /* Accent Colors */
+  --accent:  #8b5e34;
+  --accent2: #bc8a5f;
+  --accent3: #d4a373;
+  --accent4: #e2725b;
+  --accent5: #606c38;
+
+  /* Text Levels */
+  --text:  #3b2f2f;
+  --text2: #6d5b5b;
+  --text3: #918181;
+
+  /* Gradients */
+  --grad1: linear-gradient(135deg, #8b5e34, #bc8a5f);
+  --grad2: linear-gradient(135deg, #d4a373, #e2725b);
+  --grad3: linear-gradient(135deg, #606c38, #bc8a5f);
+
+  /* Shadows */
+  --shadow: 0 8px 32px rgba(139, 94, 52, 0.1);
+
+  /* Radii */
+  --r:  16px;
+  --r2: 12px;
+  --r3: 8px;
+
+  /* Sidebar width */
+  --sidebar-w: 260px;
+}

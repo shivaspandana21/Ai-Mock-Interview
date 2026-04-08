@@ -1,0 +1,83 @@
+/* ================================================
+   css/interview.css — Active Interview Overlay
+   ================================================ */
+
+#active-interview {
+  position: fixed;
+  inset: 0;
+  background: var(--bg);
+  z-index: 500;
+  display: none;
+  flex-direction: column;
+}
+#active-interview.open { display: flex; }
+
+/* Header */
+.interview-header {
+  padding: 16px 24px;
+  background: var(--bg2);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.int-title {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+.int-subtitle { font-size: 12px; color: var(--text2); }
+.int-progress-text { font-size: 14px; color: var(--text2); }
+
+/* Body */
+.interview-body {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  overflow: hidden;
+}
+.interview-left {
+  padding: 32px;
+  overflow-y: auto;
+  border-right: 1px solid var(--border);
+}
+.interview-right {
+  padding: 24px;
+  overflow-y: auto;
+  background: var(--bg2);
+}
+
+/* Question progress dots */
+.q-progress { display: flex; gap: 4px; margin-bottom: 24px; }
+.q-dot {
+  flex: 1;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--border);
+  transition: background 0.3s;
+}
+.q-dot.done { background: var(--accent); }
+.q-dot.current { background: var(--accent2); }
+
+/* AI Feedback Box */
+.ai-feedback-box {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--r2);
+  padding: 16px;
+}
+.ai-feedback-label {
+  font-size: 12px;
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* Q&A Log Scroll */
+.int-log-scroll {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 400px;
+  overflow-y: auto;
+}
